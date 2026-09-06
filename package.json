@@ -1,18 +1,17 @@
 {
-  "name": "watson-movies",
-  "version": "2.0.0",
+  "name": "cinemax",
+  "version": "1.0.0",
   "private": true,
-  "description": "Watson Movies — Cinematic violet discovery experience",
   "dependencies": {
-    "axios": "^1.6.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
     "react-router-dom": "^6.22.0",
-    "react-scripts": "5.0.1"
+    "axios": "^1.6.7"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "CI=false react-scripts build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -22,5 +21,6 @@
   "browserslist": {
     "production": [">0.2%", "not dead", "not op_mini all"],
     "development": ["last 1 chrome version", "last 1 firefox version", "last 1 safari version"]
-  }
+  },
+  "proxy": "https://cinemax2-pba3.onrender.com"
 }
