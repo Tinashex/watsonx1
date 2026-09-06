@@ -1,0 +1,74 @@
+/* ============================================
+   BADGES - FOR DASHBOARD.JS TAGS
+============================================ */
+.badge-violet {
+  background: linear-gradient(135deg, rgba(139,92,246,0.22), rgba(236,72,153,0.18));
+  border: 1px solid rgba(139,92,246,0.32);
+  color: #c4b5fd;
+  padding: 5px 11px;
+  border-radius: 99px;
+  font-size: 11px;
+  font-weight: 600;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 0 12px rgba(139,92,246,0.15), inset 0 1px 0 rgba(255,255,255,0.1);
+}
+
+.badge-glass {
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: rgba(255,255,255,0.75);
+  padding: 5px 11px;
+  border-radius: 99px;
+  font-size: 11px;
+  font-weight: 500;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.badge-red, .badge-gold {
+  /* keep old class names working - map to new style */
+  background: linear-gradient(135deg, rgba(139,92,246,0.22), rgba(236,72,153,0.18));
+  border: 1px solid rgba(139,92,246,0.32);
+  color: #c4b5fd;
+  padding: 4px 10px;
+  border-radius: 99px;
+  font-size: 11px;
+}
+
+/* Grid for favorites */
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(168px, 1fr));
+  gap: 20px 16px;
+}
+
+@media (max-width: 600px) {
+  .grid-cards {
+    grid-template-columns: repeat(auto-fill, minmax(136px, 1fr));
+    gap: 16px 12px;
+  }
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-family: var(--font-display, 'Sora', sans-serif);
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.3px;
+}
+
+.section-title__accent {
+  background: linear-gradient(135deg, #8b5cf6, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
